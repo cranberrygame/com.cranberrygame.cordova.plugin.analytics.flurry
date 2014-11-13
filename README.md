@@ -9,6 +9,8 @@ this repository was forked from https://github.com/jfpsf/flurry-phonegap-plugin 
 also https://github.com/Initsogar/cordova-flurry
 # Server setting #
 ```c
+[android, ios]
+http://www.flurry.com/ - Create your first application
 ```
 # Install phonegap plugin #
 
@@ -19,29 +21,17 @@ XDK PORJECTS - your_xdk_project - CORDOVA 3.X HYBRID MOBILE APP SETTINGS - PLUGI
 Name: flurryanalytics
 Plugin ID: com.cranberrygame.phonegap.plugin.flurryanalytics
 Repo URL: https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.flurryanalytics
-
-[android, ios]
-
-http://www.flurry.com/ - Create your first application
-
 ```
 ## Phonegap cli ##
 ```c
 cordova plugin add https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.flurryanalytics
-
-[android, ios]
-
-http://www.flurry.com/ - Create your first application
-
 ```
 ## Phonegap build service (config.xml) ##
 ```c
 not yet supported
 ```
 # API #
-See https://github.com/Initsogar/cordova-flurry
 # Examples #
-See https://github.com/Initsogar/cordova-flurry
 # Test #
 ```c
 ```
