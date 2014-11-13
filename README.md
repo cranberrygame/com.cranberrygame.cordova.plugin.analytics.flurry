@@ -1,12 +1,9 @@
 # Overview #
-paypal payment
+flurry analytics (sdk)
 
 [android, ios] [crosswalk] [phonegap cli]
 
 requires flurry analytics account http://www.flurry.com/
-
-this repository was forked from https://github.com/jfpsf/flurry-phonegap-plugin and edited for phonegap plugin support
-also https://github.com/Initsogar/cordova-flurry
 # Server setting #
 ```c
 [android, ios]
