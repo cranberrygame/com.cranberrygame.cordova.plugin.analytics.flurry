@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="com.cranberrygame.phonegap.plugin.flurryanalytics"
+      version="1.0.0">
+	  
+    <name>Phonegap FlurryAnalytics plugin</name>
+    <description>Phonegap FlurryAnalytics plugin</description>
+    <author>Sang Ki Kwon (Cranberrygame)</author>	
+    <license>MIT</license>
+    <keywords>phonegap, plugin, flurry, analytics</keywords>
+    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.flurryanalytics</repo>
+    <issue>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.flurryanalytics/issues</issue>	
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+    <js-module src="www/flurryanalytics.js">
+        <clobbers target="window.flurryanalytics" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FlurryPlugin" >
+                <param name="android-package" value="co.themobilefirm.FlurryPlugin.Flurry" />
+            </feature>
+        </config-file>
+		
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+
+        <source-file src="src/android/Flurry.java" target-dir="src/co/themobilefirm/FlurryPlugin" />
+        <source-file src="src/android/FlurryAnalytics-4.2.0.jar" target-dir="libs" framework="true" />
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="FlurryPlugin">
+                <param name="ios-package" value="FlurryPlugin"/>
+            </feature>
+        </config-file>
+		
+        <header-file src="src/ios/FlurryPlugin.h" />
+        <source-file src="src/ios/FlurryPlugin.m" />
+        <header-file src="src/ios/Flurry.h" />
+        <source-file src="src/ios/libFlurry_5.4.0.a" framework="true" />
+		
+		<framework src="CFNetwork.framework" />
+		<framework src="SystemConfiguration.framework" />
+		<framework src="Security.framework" />		
+    </platform>
+</plugin>
