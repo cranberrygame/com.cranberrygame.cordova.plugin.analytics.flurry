@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-           id="com.cranberrygame.phonegap.plugin.flurryanalytics"
-      version="1.0.0">
+           id="com.cranberrygame.cordova.plugin.analytics.flurry"
+      version="1.0.1">
 	  
     <name>Phonegap FlurryAnalytics plugin</name>
     <description>Phonegap FlurryAnalytics plugin</description>
     <author>Sang Ki Kwon (Cranberrygame)</author>	
     <license>MIT</license>
     <keywords>phonegap, plugin, flurry, analytics</keywords>
-    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.flurryanalytics</repo>
-    <issue>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.flurryanalytics/issues</issue>	
+    <repo>https://github.com/cranberrygame/com.cranberrygame.cordova.plugin.analytics.flurry</repo>
+    <issue>https://github.com/cranberrygame/com.cranberrygame.cordova.plugin.analytics.flurry/issues</issue>	
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>

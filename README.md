@@ -1,7 +1,7 @@
 # Overview #
 flurry analytics (sdk)
 
-[android, ios] [crosswalk] [phonegap cli]
+[android, ios] [phonegap cli] [xdk]
 
 requires flurry analytics account http://www.flurry.com/
 # Server setting #
@@ -16,12 +16,12 @@ http://www.flurry.com/ - Create your first application
 XDK PORJECTS - your_xdk_project - CORDOVA 3.X HYBRID MOBILE APP SETTINGS - PLUGINS AND PERMISSIONS - Third Party Plugins - Add a Third Party Plugin - Get Plugin from the Web -
 
 Name: flurryanalytics
-Plugin ID: com.cranberrygame.phonegap.plugin.flurryanalytics
-Repo URL: https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.flurryanalytics
+Plugin ID: com.cranberrygame.cordova.plugin.analytics.flurry
+Repo URL: https://github.com/cranberrygame/com.cranberrygame.cordova.plugin.analytics.flurry
 ```
 ## Phonegap cli ##
 ```c
-cordova plugin add https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.flurryanalytics
+cordova plugin add https://github.com/cranberrygame/com.cranberrygame.cordova.plugin.analytics.flurry
 ```
 ## Phonegap build service (config.xml) ##
 ```c
