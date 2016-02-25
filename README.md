@@ -1,48 +1,67 @@
+Cordova FlurryAnalytics plugin
+====================
 # Overview #
 flurry analytics (sdk)
 
-[android, ios] [phonegap cli] [xdk]
+[android, ios] [cordova cli] [xdk] [cocoon] [phonegap build service]
 
 requires flurry analytics account http://www.flurry.com/
+
+This is open source cordova plugin.
+
+You can see Cordova Plugins in one page: http://cranberrygame.github.io?referrer=github
+
+# Change log #
+```c
+```
+# Install plugin #
+
+## Cordova cli ##
+https://cordova.apache.org/docs/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface - npm install -g cordova@6.0.0
+```c
+cordova plugin add cordova-plugin-analytics-flurryanalytics
+(when build error, use github url: cordova plugin add cordova plugin add https://github.com/cranberrygame/cordova-plugin-analytics-flurryanalytics)
+```
+
+## Xdk ##
+https://software.intel.com/en-us/intel-xdk - Download XDK - XDK PORJECTS - [specific project] - CORDOVA HYBRID MOBILE APP SETTINGS - Plugin Management - Add Plugins to this Project - Third Party Plugins -
+```c
+Plugin Source: Cordova plugin registry
+Plugin ID: cordova-plugin-analytics-flurryanalytics
+```
+
+## Cocoon ##
+https://cocoon.io - Create project - [specific project] - Setting - Plugins - Custom - Git Url: https://github.com/cranberrygame/cordova-plugin-analytics-flurryanalytics.git - INSTALL - Save<br>
+
+## Phonegap build service (config.xml) ##
+https://build.phonegap.com/ - Apps - [specific project] - Update code - Zip file including config.xml
+```c
+<gap:plugin name="cordova-plugin-analytics-flurryanalytics" source="npm" />
+```
+
+## Construct2 ##
+Download construct2 plugin<br>
+https://dl.dropboxusercontent.com/u/186681453/pluginsforcordova/index.html<br>
+How to install c2 native plugins in xdk, cocoon and cordova cli<br>
+https://plus.google.com/102658703990850475314/posts/XS5jjEApJYV
+
 # Server setting #
 ```c
 [android, ios]
 http://www.flurry.com/ - Create your first application
 ```
-# Install phonegap plugin #
 
-## Crosswalk ##
-```c
-XDK PORJECTS - your_xdk_project - CORDOVA 3.X HYBRID MOBILE APP SETTINGS - PLUGINS AND PERMISSIONS - Third Party Plugins - Add a Third Party Plugin - Get Plugin from the Web -
-
-Name: flurryanalytics
-Plugin ID: com.cranberrygame.cordova.plugin.analytics.flurryanalytics
-Repo URL: https://github.com/cranberrygame/com.cranberrygame.cordova.plugin.analytics.flurryanalytics
-```
-## Phonegap cli ##
-```c
-cordova plugin add https://github.com/cranberrygame/com.cranberrygame.cordova.plugin.analytics.flurryanalytics
-```
-## Phonegap build service (config.xml) ##
-```c
-not yet supported
-```
 # API #
-# Examples #
-# Test #
-```c
+```javascript
 ```
-# How to build crosswalk and fix build error #
+# Examples #
 
-See https://dl.dropboxusercontent.com/u/186681453/howto/how_to_build_crosswalk_and_fix_build_error/index.html
-# Free advertising for games/apps made with crosswalk related c2 plugins (+Phonegap) #
+# Test #
 
-Reply this post, then I'll add your games/apps to the list: https://www.scirra.com/forum/viewtopic.php?t=115517
 # Useful links #
-Crosswalk related c2 plugins (+Phonegap)<br>
-https://www.scirra.com/forum/viewtopic.php?t=109586
+
+Cordova Plugins<br>
+http://cranberrygame.github.io?referrer=github
+
 # Credits #
 
-https://github.com/Initsogar/cordova-flurry
-
-https://github.com/jfpsf/flurry-phonegap-plugin

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
            id="cordova-plugin-analytics-flurryanalytics"
-      version="1.0.21">
+      version="1.0.22">
 	  
     <name>Cordova FlurryAnalytics plugin</name>
     <description>Cordova FlurryAnalytics plugin</description>
@@ -14,7 +14,7 @@
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
 	
-    <js-module src="www/flurryanalytics.js">
+    <js-module src="www/flurryanalytics.js" name="flurryanalytics">
         <clobbers target="window.flurryanalytics" />
     </js-module>
 
